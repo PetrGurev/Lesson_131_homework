@@ -1,0 +1,45 @@
+2023-03-28 00:47:48,643 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-28 00:47:48,644 [INFO] [33mPress CTRL+C to quit[0m
+2023-03-28 00:47:50,002 [INFO] 127.0.0.1 - - [28/Mar/2023 00:47:50] "GET /api/posts HTTP/1.1" 200 -
+2023-03-28 01:35:05,365 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-28 01:35:05,365 [INFO] [33mPress CTRL+C to quit[0m
+2023-03-28 01:35:18,563 [INFO] 127.0.0.1 - - [28/Mar/2023 01:35:18] "GET /api/posts/1 HTTP/1.1" 200 -
+2023-03-28 01:35:22,425 [INFO] 127.0.0.1 - - [28/Mar/2023 01:35:22] "GET /api/posts HTTP/1.1" 200 -
+2023-03-28 01:42:10,144 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-28 01:42:10,144 [INFO] [33mPress CTRL+C to quit[0m
+2023-03-28 01:42:16,582 [INFO] 127.0.0.1 - - [28/Mar/2023 01:42:16] "GET /api/posts/1 HTTP/1.1" 200 -
+2023-03-28 01:42:23,730 [INFO] 127.0.0.1 - - [28/Mar/2023 01:42:23] "GET /api/posts HTTP/1.1" 200 -
+2023-03-28 01:43:44,664 [INFO] 127.0.0.1 - - [28/Mar/2023 01:43:44] "GET /api/posts/1 HTTP/1.1" 200 -
+2023-03-28 01:59:04,036 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-28 01:59:04,036 [INFO] [33mPress CTRL+C to quit[0m
+2023-03-28 01:59:17,259 [INFO] 127.0.0.1 - - [28/Mar/2023 01:59:17] "GET /api/posts HTTP/1.1" 200 -
+2023-03-28 02:01:24,746 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-28 02:01:24,746 [INFO] [33mPress CTRL+C to quit[0m
+2023-03-28 02:01:31,723 [ERROR] Exception on /api/posts/2 [GET]
+Traceback (most recent call last):
+  File "D:\PythonProjects\Python_Sky_Pro\Part_2\les131hw\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PythonProjects\Python_Sky_Pro\Part_2\les131hw\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PythonProjects\Python_Sky_Pro\Part_2\les131hw\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PythonProjects\Python_Sky_Pro\Part_2\les131hw\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\PythonProjects\Python_Sky_Pro\Part_2\les131hw\app\api\views.py", line 26, in api_post
+    return jsonify(post, ensure_ascii=False)
+  File "D:\PythonProjects\Python_Sky_Pro\Part_2\les131hw\venv\lib\site-packages\flask\json\__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "D:\PythonProjects\Python_Sky_Pro\Part_2\les131hw\venv\lib\site-packages\flask\json\provider.py", line 273, in response
+    obj = self._prepare_response_obj(args, kwargs)
+  File "D:\PythonProjects\Python_Sky_Pro\Part_2\les131hw\venv\lib\site-packages\flask\json\provider.py", line 80, in _prepare_response_obj
+    raise TypeError("app.json.response() takes either args or kwargs, not both")
+TypeError: app.json.response() takes either args or kwargs, not both
+2023-03-28 02:01:31,725 [INFO] 127.0.0.1 - - [28/Mar/2023 02:01:31] "GET /api/posts/2 HTTP/1.1" 200 -
+2023-03-28 10:06:27,686 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-28 10:06:27,688 [INFO] [33mPress CTRL+C to quit[0m
